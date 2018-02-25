@@ -1,0 +1,377 @@
+
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #ffffff;
+	font-size: 16px;
+	font-family: sans-serif,arial;
+}
+
+.container{
+	width: 1000px;
+	height: 100px;
+	margin: 0 auto;
+	padding: 0px 0px;
+}
+/* In terms of size, anything inside the header which is parent is absolute. Does child is a
+absolute of parent (relative) */
+header{
+	width: 1000px;
+	height: 110px;
+	margin: 0 auto;
+	position: relative;
+}
+.logo{
+	position: absolute;
+	left: 10px;
+	top: 20px;
+}
+.nav{
+	width: 1000px;
+	height: 60px;
+	margin: 0 auto;
+	border-radius: 5px;
+}
+header .current a{
+  color:#e8491d;
+  font-weight:bold;
+}
+ul li{
+	list-style: none;
+	width: 200px;
+	line-height: 60px;
+	position: relative;
+	background: #222;
+	box-shadow: 0px 2px 5px 0px grey;
+	text-align: center;
+	float: left;
+	background: linear-gradient(darkred 20%,black 80%);
+}
+ul li ul{
+	position: absolute;
+}
+/* border of first element */
+.nav > ul > li:nth-of-type(1){
+	border-radius: 5px 0px 0px 5px;
+}
+/* border of fifth element */
+.nav > ul > li:nth-of-type(5){
+	border-radius: 0px 5px 5px 0px;
+}
+ul li a{
+	color: #fff;
+	width: 200px;
+	height: 58px;
+	display: inline-block;
+	text-decoration: none;
+}
+ul li a:hover{
+	font-weight: bold;
+	border-bottom: 2px solid #fff;
+}
+
+nav ul li ul{
+	display: none;
+}
+.nav ul li:hover ul{
+	display: block;
+}
+.fa{
+	margin-right: 5px;
+}
+.fa-list.modify{
+	display: none;
+	font-size: 35px;
+	position: absolute;
+	right: 30px;
+	top:60px;
+	cursor: pointer;
+}
+
+/* Showcase definition, Remember showcase uses ID hence the # */
+#showcase{
+  background:url('../_img/new_landscape_show.jpg') no-repeat;
+    width: 1000px;
+	height: 360px;
+  padding: 0px 0px;
+  margin: 0 auto;
+}
+
+/* Newsletter area */
+#newsletter{
+  width: 1000px;
+  height: 50px;
+  background: SlateGray;
+  margin: 0 auto;
+}
+
+#newsletter p{
+ text-align: center;
+ padding: 15px;
+ font-size: 20px;
+ color: #ffffff;
+}
+.donate {
+	color: RoyalBlue;
+	font-weight: bold;
+}
+#newsletter form{
+  float: right;
+  margin-top:15px;
+}
+
+#newsletter input[type="email"]{
+  padding:4px;
+  height: 20px;
+  width:250px;
+}
+
+/* Boxes area */
+#boxes{
+  margin-top:20px;
+}
+#boxes .box{
+  float:left;
+  text-align: center;
+  width: 30%;
+  padding: 10px;
+}
+#boxes .box img{
+  display: block;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#boxes p{
+  text-align: justify;
+}
+#boxes h3 {
+	display: block;
+  font-size: 1.17em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+	text-align: center;
+	text-transform: capitalize;
+	text-shadow: .5px 0.5px red;
+}
+/* mission_statement CSS */
+#about_us{
+	width: 1000px;
+	height: 360px;
+	padding: 0px 0px;
+	margin: 0 auto;
+}
+#about_us h2{
+	text-align: center;
+	color: #778899;
+	display: block;
+	font-size: 1.17em;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	margin-left: 0;
+	margin-right: 0;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-shadow: 1px 1px red;
+}
+
+.my_members h3{
+	text-align: center;
+	color: #778899;
+	display: block;
+	font-size: 1.17em;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	margin-left: 0;
+	margin-right: 0;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-shadow: 1px 1px red;
+}
+
+#about_us p{
+	text-align: justify;
+}
+
+#prog_list ol {
+	list-style-type: circle;
+	list-style-position: outside;
+}
+ #prog_list ol > li {
+	margin: 0;
+	padding: 10px 10px 10px 10px;
+	background-color: #ffffff;
+	float: left;
+	display: inline;
+}
+#prog_list h2{
+	text-align: center;
+	color: #778899;
+	display: block;
+	font-size: 1.17em;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	margin-left: 0;
+	margin-right: 0;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-shadow: 1px 1px red;
+}
+#my_board {
+	width: 1000px;
+	height: 1000px;
+	padding: 0px 0px;
+	margin: 0 auto;
+}
+#my_board h2{
+	text-align: center;
+	color: #778899;
+	display: block;
+	font-size: 1.17em;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	margin-left: 0;
+	margin-right: 0;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-shadow: 1px 1px red;
+}
+
+#my_board p{
+	text-align: left;
+  margin-left: 15px;
+}
+
+#my_members p {
+	text-align: left;
+}
+/* Images for board_members styling */
+
+.my_members img {
+  float:left;
+  margin-right: 10px;
+	margin-bottom: 20px;
+	display: block;
+	width: 20%;
+	border-radius: 8px;
+}
+.my_members div  {float:left;}
+
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.my_members:before,
+.my_members:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.my_members:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.my_members {
+    *zoom: 1;
+}
+
+/* Sidebar */
+aside#sidebar{
+  float:right;
+  width:30%;
+  margin-top:10px;
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+  width:90%;
+  padding:5px;
+}
+
+/* Main-col */
+article#main-col{
+  float:left;
+  width:65%;
+}
+
+/* Services */
+ul#services li{
+  list-style: none;
+  padding:20px;
+  border:#cccccc solid 1px;
+  margin-bottom:5px;
+  background:#e6e6e6;
+}
+
+/* Working for now */
+footer {
+	width: 1000px;
+	height: 20px;
+	margin: 0 auto;
+	background-color: #e8491d;
+	color: #ffffff;
+	font-size: 100%;
+	text-align: center;
+	padding: 25px 0px 25px 0px;
+	clear: both;
+}
+/* change from 480px to 768px */
+@media screen and (max-width: 480px){
+	header{
+		width: 100%;
+	}
+	.nav{
+		display: none;
+		width: 100%;
+		height: auto;
+	}
+	ul li{
+		width: 100%;
+		float: none;
+	}
+	ul li a{
+		width: 100%;
+		display: block;
+	}
+	ul li ul{
+		position: static;
+	}
+	ul li ul li a{
+		background: #222;
+	}
+	.fa-list.modify{
+		display: block;
+	}
+	.container{
+		width: 100%;
+		height: auto;
+	}
+	body{
+		overflow-x:hidden;
+	}
+	header #logo,
+	header #menu,
+	#Newsletter h1,
+	#newsletter form,
+	#boxes .box,
+	article#main-col,
+	aside#sidebar{
+		float:none;
+		text-align:center;
+		width:100%;
+	}
+}

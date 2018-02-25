@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html" charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<title>God Loves Kinderen | Welcome</title>
+		<!-- link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+		<link href="./_css/main_style.css" rel="stylesheet" type="text/css">
+	</head>
+<body>
+<header>
+	<div class="logo"><img src="./_img/GLK_200_80.jpg"></div>
+	<div class="menu"><span class="fa fa-list modify"></span></div>
+</header>
+<nav class="nav">
+	<ul>
+		<li class="current"><a href="index.html"><span class="fa fa-home"></span>Home</a></li>
+		<li><a><span class="fa fa-code"></span>About Us</a>
+			<ul>
+					<li><a href="mission_statement.html">Mission</a></li>
+					<li><a href="board_members.html">Board Members</a></li>
+					<li><a href="#">Partners</a></li>
+					<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</li>
+		<li><a href="programs.html"><span class="fa fa-list"></span>Programs</a></li>
+		<li><a href="#"><span class="fa fa-file-video-o"></span>Volunteer</a></li>
+		<li><a href="activity_reports.html"><span class="fa fa-info"></span>Activity Reports</a></li>
+	</ul>
+</nav>
+
+<!-- Showcase area   -->
+    <section id="showcase">
+      <div class="container"></div>
+    </section>
+
+    <!-- Newsletter area -->
+    <section id="newsletter">
+    <div class="container">
+      <p>Send donation via PayPal to: <span class="donate">glkinderen@gmail.com</span></p>
+    </div>
+  </section>
+  <!-- placehoder for our images -->
+  <section id="boxes">
+    <div class="container">
+      <div class="box">
+        <img src="./_img/street_children_accra.jpg" border="2">
+        <h3>Street Children in Accra</h3>
+        <p>Research conducted by the Department of Social Welfare in Ghana
+          indicates that there are 33,000 children living on the streets
+          in the country. The street children are left to fend for themselves
+          with resultant problems such as teenage pregnancies, children growing
+          up and becoming social misfits and engaging in social vices such as
+          arm robbery, drug addiction etc.</p>
+      </div>
+      <div class="box">
+        <img src="./_img/street_children_school.jpg" border="2">
+        <h3>Street Children in School</h3>
+        <p>According to the Country Representative of the United Nations
+          Children&#39;s Fund (UNICEF) in Ghana, Dr Iyabode Olusanmi, 75 per cent
+          of all street children live in Accra and Kumasi, with 71 per cent of
+          them being illiterates.</p>
+      </div>
+      <div class="box">
+        <img src="./_img/street-children_kumasi2.jpg" border="2">
+        <h3>Street Children in Kumasi</h3>
+        <p>There are a few NGOs in Ghana trying to help in addressing this
+          social problem in the society. Some are addressing the issue of street
+          children by providing regular and free counseling for them when they
+          are in trouble or to prevent them from getting into trouble. Others
+          make the effort to enroll them back to school by paying their fees
+          and providing their uniforms and other associated educational costs.
+        </p>
+      </div>
+    </div>
+  </section>
+  <footer>
+			God Loves Kinderen, Copyright &copy; 2017 Designed by OneStep
+  </footer>
+  </body>
+</html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+	var menu = false;
+	$(".fa-list.modify").click(function(){
+		if(menu == false){
+			$(".nav").fadeIn();
+			menu = true;
+		}else{
+			$(".nav").fadeOut();
+			menu = false;
+		}
+	})
+
+</script>
